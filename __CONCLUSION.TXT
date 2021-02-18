@@ -24,3 +24,5 @@ Pour les rapatrier dans un nouveau dossier local :
 
        et après c'est comme d'hab....
 
+         git push -u origin MaBranche  (pour mettre sur remote repo. ma branche)
+
