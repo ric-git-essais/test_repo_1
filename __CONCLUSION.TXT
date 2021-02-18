@@ -1,0 +1,26 @@
+Une fois des tags existants sur un remote repo :
+
+( TAG = ALIAS DONNé à un commit(hash) )
+
+
+Pour les rapatrier dans un nouveau dossier local :
+   Bon bien spur, dans ce dossier, au préalable, faire :
+       git init
+       git remote add origin [URL_DU_REPO]
+
+   PUIS
+      git fetch --tags
+      git checkout [NOM_QUON_AVAIT_DONNÉ_AU_TAG]   (Rem.: on peut faire ça sur n'importe quel tag, et autant de fois qu'on veut)
+
+      (ATTENTION, là on sera en HEAD DETACHED)
+      (MAis historique accessible : git log )
+
+
+
+   ET SI JAMAIS ON VEUT RETRAVAILLER EN REPARTANT DE CE TAG (donc du commit correspondant), alors :
+     on crée une branche à partir de ce tag, syntaxe classique :
+       
+       git checkout -b MaBranche
+
+       et après c'est comme d'hab....
+
